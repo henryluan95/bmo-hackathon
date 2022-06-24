@@ -119,3 +119,15 @@ select {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
+
+.return {
+  background-color: #0075BE;
+  color: #FFF;
+  border: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAaCAYAAAC6nQw6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVHgB1dXRDcIgEAbgkwkcoSM4ihvoCG6gGziCbuAIdQNHYIQ+khDgvEvEhzaUKyVp+yeXPkC/QhMOgIlBxIaqNcY0UBpGQgiaCvlZhPUQLMKstQd6qeshf4zH5yKx2hrIh7a9TyLOuaMAeY0iNHjKAOi9f45uZ1XIVYDcNoJQFE3cZScphSAJfzG3Kl75IthFgN1FGB2Ns+DnPxbB5h/amCptZCL2Bkl+mE4gnajVxlRp/glM17jbBhfkF8uyUIklgU8FAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  width: 11%;
+  padding: 0.75rem 0;
+  background-position: 8% 50%;
+  border-radius: 15px;
+}

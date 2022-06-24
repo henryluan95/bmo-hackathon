@@ -29,7 +29,7 @@ const Form = () => {
             </div>
           </div>
           <div className="card__setting">
-            <button>Back</button>
+            <button className="return"> Go Back</button>
             <select className="card__language" name="language" id="language">
               <option value="">--Please choose a language--</option>
               <option value="English">English</option>
@@ -69,12 +69,13 @@ const Form = () => {
           </div>
           <div className="card__setting">
             <button
+            className="return"
               onClick={() => {
                 setIsNewComer(true);
                 setEmployment(false);
               }}
             >
-              Back
+             Go Back
             </button>
             <select className="card__language" name="language" id="language">
               <option value="">--Please choose a language--</option>
@@ -115,12 +116,13 @@ const Form = () => {
           </div>
           <div className="card__setting">
             <button
+            className="return"
               onClick={() => {
                 setEmployment(true);
                 setGoal(false);
               }}
             >
-              Back
+              Go Back
             </button>
             <select className="card__language" name="language" id="language">
               <option value="">--Please choose a language--</option>
