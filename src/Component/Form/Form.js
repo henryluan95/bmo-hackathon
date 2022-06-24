@@ -25,7 +25,6 @@ const Form = () => {
             src={backgroundEl3}
             alt="background icon"
           />
-
           <h1 className="card__title">Begin your journey with BMO</h1>
           <div className="status">
             <p className="status__title">Are you a permanent resident?</p>
@@ -72,6 +71,11 @@ const Form = () => {
           <img
             className="backgroundEl1"
             src={backgroundEl1}
+            alt="background icon"
+          />
+          <img
+            className="backgroundEl3"
+            src={backgroundEl3}
             alt="background icon"
           />
           <h1 className="card__title">What are your plans in Canada?</h1>
@@ -131,6 +135,11 @@ const Form = () => {
             src={backgroundEl1}
             alt="background icon"
           />
+          <img
+            className="backgroundEl3"
+            src={backgroundEl3}
+            alt="background icon"
+          />
           <h1 className="card__title">What are you hoping to accomplish?</h1>
           <div className="goals">
             <h2 className="goals__title">I am...</h2>
@@ -186,6 +195,11 @@ const Form = () => {
           <img
             className="backgroundEl1"
             src={backgroundEl1}
+            alt="background icon"
+          />
+          <img
+            className="backgroundEl3"
+            src={backgroundEl3}
             alt="background icon"
           />
           <h1 className="card__title card__title--left">
