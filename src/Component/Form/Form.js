@@ -42,7 +42,13 @@ const Form = () => {
             </div>
           </div>
           <div className="card__setting">
-            <button className="return"> Go Back</button>
+            <button
+              className="return"
+              onClick={() => window.location.replace("http://localhost:3001/")}
+            >
+              {" "}
+              Go Back
+            </button>
             <img
               className="backgroundEl2"
               src={backgroundEl2}
