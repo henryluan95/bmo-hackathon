@@ -10,6 +10,19 @@ const Form = () => {
   const [employment, setEmployment] = useState(false);
   const [goal, setGoal] = useState(false);
   const [recommendation, setRecommendation] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(true);
+  const [isVietnamese, setIsVietnamese] = useState(false);
+
+  //function to handle selection
+  const handleChange = (e) => {
+    if (e.target.value === "English") {
+      setIsEnglish(true);
+      setIsVietnamese(false);
+    } else if (e.target.value === "Tiếng Việt") {
+      setIsEnglish(false);
+      setIsVietnamese(true);
+    }
+  };
 
   if (isNewComer) {
     return (
@@ -25,11 +38,25 @@ const Form = () => {
             src={backgroundEl3}
             alt="background icon"
           />
-          <h1 className="card__title">Begin your journey with BMO</h1>
+          <h1 className="card__title">
+            {isEnglish
+              ? "Begin your journey with BMO"
+              : isVietnamese
+              ? "Bắt đầu hành trình với BMO"
+              : ""}
+          </h1>
           <div className="status">
-            <p className="status__title">Are you a permanent resident?</p>
+            <p className="status__title">
+              {isEnglish
+                ? "Are you a permanent resident?"
+                : isVietnamese
+                ? "Bạn có phải là dân thường trú"
+                : ""}
+            </p>
             <div className="buttons">
-              <button className="button">No</button>
+              <button className="button">
+                {isEnglish ? "No" : isVietnamese ? "Không" : ""}
+              </button>
               <button
                 onClick={() => {
                   setIsNewComer(false);
@@ -37,7 +64,7 @@ const Form = () => {
                 }}
                 className="button"
               >
-                Yes
+                {isEnglish ? "Yes" : isVietnamese ? "Phải" : ""}
               </button>
             </div>
           </div>
@@ -46,16 +73,20 @@ const Form = () => {
               className="return"
               onClick={() => window.location.replace("http://localhost:3001/")}
             >
-              {" "}
-              Go Back
+              {isEnglish ? "Go Back" : isVietnamese ? "Quay Lại" : ""}
             </button>
             <img
               className="backgroundEl2"
               src={backgroundEl2}
               alt="background icon"
             />
-            <select className="card__language" name="language" id="language">
-              <option value="">English</option>
+            <select
+              className="card__language"
+              name="language"
+              id="language"
+              onChange={handleChange}
+            >
+              <option value="English">English</option>
               <option value="українська мова">українська мова</option>
               <option value="繁體中文">繁體中文</option>
               <option value="简体中文">简体中文</option>
