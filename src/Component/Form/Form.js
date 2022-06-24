@@ -1,13 +1,14 @@
 import "./Form.scss";
 import backgroundEl1 from "../../Assets/Rectangle1.svg";
 import backgroundEl2 from "../../Assets/Rectangle2.svg";
+import backgroundEl3 from "../../Assets/Rectangle3.svg";
 
 import React, { useState } from "react";
 
 const Form = () => {
-  const [isNewComer, setIsNewComer] = useState(false);
+  const [isNewComer, setIsNewComer] = useState(true);
   const [employment, setEmployment] = useState(false);
-  const [goal, setGoal] = useState(true);
+  const [goal, setGoal] = useState(false);
   const [recommendation, setRecommendation] = useState(false);
 
   if (isNewComer) {
@@ -17,6 +18,11 @@ const Form = () => {
           <img
             className="backgroundEl1"
             src={backgroundEl1}
+            alt="background icon"
+          />
+          <img
+            className="backgroundEl3"
+            src={backgroundEl3}
             alt="background icon"
           />
 

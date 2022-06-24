@@ -25,6 +25,7 @@
   &__title {
     margin: 0;
     font-size: 28px;
+    font-weight: 400;
 
     &--left {
       align-self: flex-start;
@@ -134,5 +135,11 @@ select {
   bottom: -50px;
   right: 0;
   z-index: 0;
-  //   opacity: 1;
+}
+
+.backgroundEl3 {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  width: 7rem;
 }
