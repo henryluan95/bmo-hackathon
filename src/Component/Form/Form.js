@@ -17,7 +17,15 @@ const Form = () => {
             <p className="status__title">Are you a permanent resident?</p>
             <div className="buttons">
               <button className="button">No</button>
-              <button className="button">Yes</button>
+              <button
+                onClick={() => {
+                  setIsNewComer(false);
+                  setEmployment(true);
+                }}
+                className="button"
+              >
+                Yes
+              </button>
             </div>
           </div>
           <div className="card__setting">
@@ -47,12 +55,27 @@ const Form = () => {
             <div className="employments__buttons">
               <button className="button">A student</button>
               <button className="button">A business owner</button>
-              <button className="button">Working/Looking for work</button>
+              <button
+                onClick={() => {
+                  setEmployment(false);
+                  setGoal(true);
+                }}
+                className="button"
+              >
+                Working/Looking for work
+              </button>
               <button className="button">Not sure yet</button>
             </div>
           </div>
           <div className="card__setting">
-            <button>Back</button>
+            <button
+              onClick={() => {
+                setIsNewComer(true);
+                setEmployment(false);
+              }}
+            >
+              Back
+            </button>
             <select className="card__language" name="language" id="language">
               <option value="">--Please choose a language--</option>
               <option value="English">English</option>
@@ -78,12 +101,27 @@ const Form = () => {
             <div className="goals__buttons">
               <button className="button">Family banking</button>
               <button className="button">Buying a home</button>
-              <button className="button">Saving for retirement</button>
+              <button
+                onClick={() => {
+                  setGoal(false);
+                  setRecommendation(true);
+                }}
+                className="button"
+              >
+                Saving for retirement
+              </button>
               <button className="button">Rewards program</button>
             </div>
           </div>
           <div className="card__setting">
-            <button>Back</button>
+            <button
+              onClick={() => {
+                setEmployment(true);
+                setGoal(false);
+              }}
+            >
+              Back
+            </button>
             <select className="card__language" name="language" id="language">
               <option value="">--Please choose a language--</option>
               <option value="English">English</option>
