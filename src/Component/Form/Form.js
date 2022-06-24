@@ -42,7 +42,7 @@ const Form = () => {
             </div>
           </div>
           <div className="card__setting">
-            <button>Back</button>
+            <button className="return"> Go Back</button>
             <img
               className="backgroundEl2"
               src={backgroundEl2}
@@ -103,12 +103,13 @@ const Form = () => {
               alt="background icon"
             />
             <button
+            className="return"
               onClick={() => {
                 setIsNewComer(true);
                 setEmployment(false);
               }}
             >
-              Back
+             Go Back
             </button>
             <select className="card__language" name="language" id="language">
               <option value="">English</option>
@@ -165,12 +166,13 @@ const Form = () => {
               alt="background icon"
             />
             <button
+            className="return"
               onClick={() => {
                 setEmployment(true);
                 setGoal(false);
               }}
             >
-              Back
+              Go Back
             </button>
             <select className="card__language" name="language" id="language">
               <option value="">English</option>
