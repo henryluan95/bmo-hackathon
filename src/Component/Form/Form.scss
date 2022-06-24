@@ -45,6 +45,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-bottom: -1rem;
   }
 
   &--position {
@@ -62,6 +63,7 @@
 
   &__title {
     font-size: 28px;
+    font-weight: 400;
   }
 }
 
@@ -111,6 +113,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  &__title {
+    font-weight: 400;
+  }
 }
 
 select {
@@ -126,8 +132,8 @@ select {
 }
 
 .return {
-  background-color: #0075BE;
-  color: #FFF;
+  background-color: #0075be;
+  color: #fff;
   border: none;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAaCAYAAAC6nQw6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVHgB1dXRDcIgEAbgkwkcoSM4ihvoCG6gGziCbuAIdQNHYIQ+khDgvEvEhzaUKyVp+yeXPkC/QhMOgIlBxIaqNcY0UBpGQgiaCvlZhPUQLMKstQd6qeshf4zH5yKx2hrIh7a9TyLOuaMAeY0iNHjKAOi9f45uZ1XIVYDcNoJQFE3cZScphSAJfzG3Kl75IthFgN1FGB2Ns+DnPxbB5h/amCptZCL2Bkl+mE4gnajVxlRp/glM17jbBhfkF8uyUIklgU8FAAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
@@ -144,14 +150,14 @@ select {
 
 .backgroundEl2 {
   position: absolute;
-  bottom: -50px;
+  bottom: -32px;
   right: 0;
   z-index: 0;
 }
 
 .backgroundEl3 {
   position: absolute;
-  top: 3rem;
+  top: 2.6rem;
   left: 4rem;
   width: 7rem;
 }
