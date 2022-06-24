@@ -1,17 +1,25 @@
 import "./Form.scss";
+import backgroundEl1 from "../../Assets/Rectangle1.svg";
+import backgroundEl2 from "../../Assets/Rectangle2.svg";
 
 import React, { useState } from "react";
 
 const Form = () => {
-  const [isNewComer, setIsNewComer] = useState(true);
+  const [isNewComer, setIsNewComer] = useState(false);
   const [employment, setEmployment] = useState(false);
-  const [goal, setGoal] = useState(false);
+  const [goal, setGoal] = useState(true);
   const [recommendation, setRecommendation] = useState(false);
 
   if (isNewComer) {
     return (
       <section className="overlay">
         <div className="card">
+          <img
+            className="backgroundEl1"
+            src={backgroundEl1}
+            alt="background icon"
+          />
+
           <h1 className="card__title">Begin your journey with BMO</h1>
           <div className="status">
             <p className="status__title">Are you a permanent resident?</p>
@@ -30,14 +38,20 @@ const Form = () => {
           </div>
           <div className="card__setting">
             <button className="return"> Go Back</button>
+            <img
+              className="backgroundEl2"
+              src={backgroundEl2}
+              alt="background icon"
+            />
             <select className="card__language" name="language" id="language">
-              <option value="">--Please choose a language--</option>
-              <option value="English">English</option>
-              <option value="Viet Nam">Viet Nam</option>
-              <option value="hamster">Ukrainian</option>
-              <option value="parrot">Parrot</option>
-              <option value="spider">Spider</option>
-              <option value="goldfish">Goldfish</option>
+              <option value="">English</option>
+              <option value="українська мова">українська мова</option>
+              <option value="繁體中文">繁體中文</option>
+              <option value="简体中文">简体中文</option>
+              <option value="العربية">العربية</option>
+              <option value="Tiếng Việt">Tiếng Việt</option>
+              <option value="Urdu">Urdu</option>
+              <option value="French">French</option>
             </select>
           </div>
         </div>
@@ -49,6 +63,11 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card">
+          <img
+            className="backgroundEl1"
+            src={backgroundEl1}
+            alt="background icon"
+          />
           <h1 className="card__title">What are your plans in Canada?</h1>
           <div className="employments">
             <h2 className="employments__title">I am...</h2>
@@ -68,6 +87,11 @@ const Form = () => {
             </div>
           </div>
           <div className="card__setting">
+            <img
+              className="backgroundEl2"
+              src={backgroundEl2}
+              alt="background icon"
+            />
             <button
             className="return"
               onClick={() => {
@@ -78,13 +102,14 @@ const Form = () => {
              Go Back
             </button>
             <select className="card__language" name="language" id="language">
-              <option value="">--Please choose a language--</option>
-              <option value="English">English</option>
-              <option value="Viet Nam">Viet Nam</option>
-              <option value="hamster">Ukrainian</option>
-              <option value="parrot">Parrot</option>
-              <option value="spider">Spider</option>
-              <option value="goldfish">Goldfish</option>
+              <option value="">English</option>
+              <option value="українська мова">українська мова</option>
+              <option value="繁體中文">繁體中文</option>
+              <option value="简体中文">简体中文</option>
+              <option value="العربية">العربية</option>
+              <option value="Tiếng Việt">Tiếng Việt</option>
+              <option value="Urdu">Urdu</option>
+              <option value="French">French</option>
             </select>
           </div>
         </div>
@@ -96,6 +121,11 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card">
+          <img
+            className="backgroundEl1"
+            src={backgroundEl1}
+            alt="background icon"
+          />
           <h1 className="card__title">What are you hoping to accomplish?</h1>
           <div className="goals">
             <h2 className="goals__title">I am...</h2>
@@ -115,6 +145,11 @@ const Form = () => {
             </div>
           </div>
           <div className="card__setting">
+            <img
+              className="backgroundEl2"
+              src={backgroundEl2}
+              alt="background icon"
+            />
             <button
             className="return"
               onClick={() => {
@@ -125,13 +160,14 @@ const Form = () => {
               Go Back
             </button>
             <select className="card__language" name="language" id="language">
-              <option value="">--Please choose a language--</option>
-              <option value="English">English</option>
-              <option value="Viet Nam">Viet Nam</option>
-              <option value="hamster">Ukrainian</option>
-              <option value="parrot">Parrot</option>
-              <option value="spider">Spider</option>
-              <option value="goldfish">Goldfish</option>
+              <option value="">English</option>
+              <option value="українська мова">українська мова</option>
+              <option value="繁體中文">繁體中文</option>
+              <option value="简体中文">简体中文</option>
+              <option value="العربية">العربية</option>
+              <option value="Tiếng Việt">Tiếng Việt</option>
+              <option value="Urdu">Urdu</option>
+              <option value="French">French</option>
             </select>
           </div>
         </div>
@@ -143,6 +179,11 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card card--position">
+          <img
+            className="backgroundEl1"
+            src={backgroundEl1}
+            alt="background icon"
+          />
           <h1 className="card__title card__title--left">
             Saving For Retirement
           </h1>
