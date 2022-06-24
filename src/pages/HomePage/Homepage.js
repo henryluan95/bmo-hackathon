@@ -9,7 +9,7 @@ const Homepage = () => {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Form} />
+          <Route path="/status" component={Form} />
           <Route path="/employment" component={Form} />
           <Route path="/goal" component={Form} />
           <Route path="/recommendation " component={Form} />

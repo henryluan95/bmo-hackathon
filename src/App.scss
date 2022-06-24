@@ -21,6 +21,7 @@ body {
   background-color: white;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;

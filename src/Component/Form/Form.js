@@ -103,13 +103,13 @@ const Form = () => {
               alt="background icon"
             />
             <button
-            className="return"
+              className="return"
               onClick={() => {
                 setIsNewComer(true);
                 setEmployment(false);
               }}
             >
-             Go Back
+              Go Back
             </button>
             <select className="card__language" name="language" id="language">
               <option value="">English</option>
@@ -166,7 +166,7 @@ const Form = () => {
               alt="background icon"
             />
             <button
-            className="return"
+              className="return"
               onClick={() => {
                 setEmployment(true);
                 setGoal(false);
@@ -236,7 +236,11 @@ const Form = () => {
                 </p>
               </div>
             </div>
-            <a className="button recommendations__button" href="">
+            <a
+              className="button recommendations__button"
+              href="https://www.bmo.com/main/personal/investments/schedule-a-call/?icid=tl-US32840INV1-HTBMO39"
+              target="_blank"
+            >
               Talk to an advisor
             </a>
           </div>
