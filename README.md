@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# BMO Hackathon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**A 24-hour collaborative tech sprint challenging 
+BrainStation students to create digital solutions for 
+one of BrainStation’s Industry Partners.**
 
-## Available Scripts
+The goal of this hackathon is to practice the skills I 
+have developed to date, learning new concepts 
+from peers, and practising communication and 
+remote work within cross-functional teams.
 
-In the project directory, you can run:
+Our team includes me, one of my Web Developer classmates, one BrainStation's UX/UI Student and one BrainStation's Data Scientist. BMO presented us with the question: "How might we empower new Canadians by strengthening their 
+financial wellbeing and understanding of digital banking?". And this application is our answer.
 
-### `npm start`
+Please click here for the live website: https://bmo-hackathon.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Screenshot
 
-### `npm test`
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/paperman-4a7c4.appspot.com/o/BMO-Hackathon%2FBMO%20desktop.png?alt=media&token=4cdbfad5-5c9c-4d24-b4f6-79ddbc6a4a3d)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/paperman-4a7c4.appspot.com/o/BMO-Hackathon%2FBMO%20desktop%202.png?alt=media&token=aa3bf5f3-6649-41a9-8e54-28634d4728b8)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/paperman-4a7c4.appspot.com/o/BMO-Hackathon%2FBMO%20desktop%203.png?alt=media&token=f0174c31-c6f0-4dd5-973a-35c15daff8ef)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stacks
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository.
+```$ git@github.com:henryluan95/bmo-hackathon.git```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Run `npm install` from inside the client directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+$ cd bmo-hackathon
+$ npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start React App
+```$ npm start```
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Henry Luan [@henryluan](https://github.com/henryluan95)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
