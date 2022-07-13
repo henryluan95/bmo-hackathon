@@ -48,6 +48,18 @@ $ npm install
 3. Start React App
 ```$ npm start```
 
+## Walkthrough
+
+1. Click on the "Discover your solution" to start the application.
+
+2. Answer "yes" when being asked "Are you a permanent resident?"
+
+3. Answer "Working/Looking for work" when being asked "What are your plans in Canada?"
+
+4. Answer "Saving for retirement" when being asked "What are you hoping to accomplish?"
+
+5. Click on "Talk to an advisor" to connect with an advisor.
+
 ## Author
 
 Henry Luan [@henryluan](https://github.com/henryluan95)
