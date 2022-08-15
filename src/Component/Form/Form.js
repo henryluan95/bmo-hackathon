@@ -87,13 +87,25 @@ const Form = () => {
               onChange={handleChange}
             >
               <option value="English">English</option>
-              <option value="українська мова">українська мова</option>
-              <option value="繁體中文">繁體中文</option>
-              <option value="简体中文">简体中文</option>
-              <option value="العربية">العربية</option>
               <option value="Tiếng Việt">Tiếng Việt</option>
-              <option value="Urdu">Urdu</option>
-              <option value="French">French</option>
+              <option value="українська мова" disabled>
+                українська мова
+              </option>
+              <option value="繁體中文" disabled>
+                繁體中文
+              </option>
+              <option value="简体中文" disabled>
+                简体中文
+              </option>
+              <option value="العربية" disabled>
+                العربية
+              </option>
+              <option value="Urdu" disabled>
+                Urdu
+              </option>
+              <option value="French" disabled>
+                French
+              </option>
             </select>
           </div>
         </div>
@@ -115,12 +127,28 @@ const Form = () => {
             src={backgroundEl3}
             alt="background icon"
           />
-          <h1 className="card__title">What are your plans in Canada?</h1>
+          <h1 className="card__title">
+            {isEnglish
+              ? "What are your plans in Canada?"
+              : isVietnamese
+              ? "Kế hoạch ở Canada của bạn là gì?"
+              : ""}
+          </h1>
           <div className="employments">
-            <h2 className="employments__title">I am...</h2>
+            <h2 className="employments__title">
+              {isEnglish ? "I am... " : isVietnamese ? "Tôi là..." : ""}
+            </h2>
             <div className="employments__buttons">
-              <button className="button">A student</button>
-              <button className="button">A business owner</button>
+              <button className="button">
+                {isEnglish ? "A student" : isVietnamese ? "Học sinh" : ""}
+              </button>
+              <button className="button">
+                {isEnglish
+                  ? "A business owner"
+                  : isVietnamese
+                  ? "Chủ doanh nghiệp"
+                  : ""}
+              </button>
               <button
                 onClick={() => {
                   setEmployment(false);
@@ -128,9 +156,15 @@ const Form = () => {
                 }}
                 className="button"
               >
-                Working/Looking for work
+                {isEnglish
+                  ? "Working/Looking for work"
+                  : isVietnamese
+                  ? "Đang làm/tìm việc làm"
+                  : ""}
               </button>
-              <button className="button">Not sure yet</button>
+              <button className="button">
+                {isEnglish ? "Not sure yet" : isVietnamese ? "Không chắc" : ""}
+              </button>
             </div>
           </div>
           <div className="card__setting">
@@ -146,17 +180,34 @@ const Form = () => {
                 setEmployment(false);
               }}
             >
-              Go Back
+              {isEnglish ? "Go Back" : isVietnamese ? "Quay Lại" : ""}
             </button>
-            <select className="card__language" name="language" id="language">
-              <option value="">English</option>
-              <option value="українська мова">українська мова</option>
-              <option value="繁體中文">繁體中文</option>
-              <option value="简体中文">简体中文</option>
-              <option value="العربية">العربية</option>
+            <select
+              className="card__language"
+              name="language"
+              id="language"
+              onChange={handleChange}
+            >
+              <option value="English">English</option>
               <option value="Tiếng Việt">Tiếng Việt</option>
-              <option value="Urdu">Urdu</option>
-              <option value="French">French</option>
+              <option value="українська мова" disabled>
+                українська мова
+              </option>
+              <option value="繁體中文" disabled>
+                繁體中文
+              </option>
+              <option value="简体中文" disabled>
+                简体中文
+              </option>
+              <option value="العربية" disabled>
+                العربية
+              </option>
+              <option value="Urdu" disabled>
+                Urdu
+              </option>
+              <option value="French" disabled>
+                French
+              </option>
             </select>
           </div>
         </div>
@@ -178,12 +229,28 @@ const Form = () => {
             src={backgroundEl3}
             alt="background icon"
           />
-          <h1 className="card__title">What are you hoping to accomplish?</h1>
+          <h1 className="card__title">
+            {isEnglish
+              ? "What are you hoping to accomplish?"
+              : isVietnamese
+              ? "Bạn đang muốn đạt được điều gì?"
+              : ""}
+          </h1>
           <div className="goals">
-            <h2 className="goals__title">I am...</h2>
+            <h2 className="goals__title">
+              {isEnglish ? "I am... " : isVietnamese ? "Tôi cần" : ""}
+            </h2>
             <div className="goals__buttons">
-              <button className="button">Family banking</button>
-              <button className="button">Buying a home</button>
+              <button className="button">
+                {isEnglish
+                  ? "Family banking"
+                  : isVietnamese
+                  ? "Dịch vụ gia đình"
+                  : ""}
+              </button>
+              <button className="button">
+                {isEnglish ? "Buying a home" : isVietnamese ? "Mua nhà" : ""}
+              </button>
               <button
                 onClick={() => {
                   setGoal(false);
@@ -191,9 +258,19 @@ const Form = () => {
                 }}
                 className="button"
               >
-                Saving for retirement
+                {isEnglish
+                  ? "Saving for retirement"
+                  : isVietnamese
+                  ? "Tiết kiệm tiền về hưu"
+                  : ""}
               </button>
-              <button className="button">Rewards program</button>
+              <button className="button">
+                {isEnglish
+                  ? "Rewards program"
+                  : isVietnamese
+                  ? "Chương trình quà thưởng"
+                  : ""}
+              </button>
             </div>
           </div>
           <div className="card__setting">
@@ -209,17 +286,34 @@ const Form = () => {
                 setGoal(false);
               }}
             >
-              Go Back
+              {isEnglish ? "Go Back" : isVietnamese ? "Quay Lại" : ""}
             </button>
-            <select className="card__language" name="language" id="language">
-              <option value="">English</option>
-              <option value="українська мова">українська мова</option>
-              <option value="繁體中文">繁體中文</option>
-              <option value="简体中文">简体中文</option>
-              <option value="العربية">العربية</option>
+            <select
+              className="card__language"
+              name="language"
+              id="language"
+              onChange={handleChange}
+            >
+              <option value="English">English</option>
               <option value="Tiếng Việt">Tiếng Việt</option>
-              <option value="Urdu">Urdu</option>
-              <option value="French">French</option>
+              <option value="українська мова" disabled>
+                українська мова
+              </option>
+              <option value="繁體中文" disabled>
+                繁體中文
+              </option>
+              <option value="简体中文" disabled>
+                简体中文
+              </option>
+              <option value="العربية" disabled>
+                العربية
+              </option>
+              <option value="Urdu" disabled>
+                Urdu
+              </option>
+              <option value="French" disabled>
+                French
+              </option>
             </select>
           </div>
         </div>
@@ -242,34 +336,59 @@ const Form = () => {
             alt="background icon"
           />
           <h1 className="card__title card__title--left">
-            Saving For Retirement
+            {isEnglish
+              ? "Saving For Retirement "
+              : isVietnamese
+              ? "Tiết kiệm tiền về hưu"
+              : ""}
           </h1>
           <div className="recommendations">
             <h2 className="recommendations__title">RRSPs</h2>
             <div className="recommendations__info">
               <div className="recommendations__detail">
                 <p className="recommendations__text">
-                  Registered Retirement Savings Plans (RRSPs) are accounts
-                  specifically designed to help you invest for retirement.
+                  {isEnglish
+                    ? ` Registered Retirement Savings Plans (RRSPs) are accounts
+              specifically designed to help you invest for retirement.
+               Saving For Retirement  `
+                    : isVietnamese
+                    ? "Registered Retirement Savings Plans (RRSPs) là những tài khoản được thiết kế để giúp khách hàng tiết kiệm tiền về hưu."
+                    : ""}
                 </p>
                 <p className="recommendations__text">
-                  You can fill your RRSP with a mix of investments like stocks,
-                  mutual funds, and other savings accounts, and you even get a
-                  tax break on any income you invest in your RRSP.
+                  {isEnglish
+                    ? `You can fill your RRSP with a mix of investments like stocks,
+              mutual funds, and other savings accounts, and you even get a
+              tax break on any income you invest in your RRSP.`
+                    : isVietnamese
+                    ? "Khách hàng có thể sử dụng RRSP để giữ các sản phẩm đầu tư như cổ phiếu, quỹ tương hỗ, và các tài khoản tiết kiệm, và khách hàng có thể hoãn phần thuế trên thu nhập khi đầu tư vào RRSP."
+                    : ""}
                 </p>
               </div>
               <div className="recommendations__detail">
-                <p className="recommendations__text">Meet Raj,</p>
                 <p className="recommendations__text">
-                  Raj is ready to retire and had opened his RRSP 30 years ago
-                  when he first started working. He talked with a BMO advisor
-                  and discovered he should be saving about $10,000 each year.
+                  {isEnglish ? "Meet Raj," : isVietnamese ? "Gặp Raj," : ""}
                 </p>
                 <p className="recommendations__text">
-                  Raj had been putting that money into his RRSP for each of his
-                  30 years in the workforce, and because of that he was able to
-                  retire with 60% more savings when compared to an unregistered
-                  savings account.
+                  {" "}
+                  {isEnglish
+                    ? `Raj is ready to retire and had opened his RRSP 30 years ago
+                    when he first started working. He talked with a BMO advisor
+                    and discovered he should be saving about $10,000 each year.`
+                    : isVietnamese
+                    ? "Raj đã sẵn sàng để về hưu và đã mở RRSP 30 năm về trước khi anh mới bắt đầu đi làm. Anh đã làm việc với tư vấn viên của BMO và được khuyên là anh nên đầu tư tầm $10,000 mỗi năm."
+                    : ""}
+                </p>
+                <p className="recommendations__text">
+                  {" "}
+                  {isEnglish
+                    ? `Raj had been putting that money into his RRSP for each of his
+                    30 years in the workforce, and because of that he was able to
+                    retire with 60% more savings when compared to an unregistered
+                    savings account.`
+                    : isVietnamese
+                    ? "Raj đã bắt đầu đầu tư vào tài khoản RRSP mỗi năm trong 30 năm qua khi đi làm. Cũng bởi vì vậy, anh đã có thể về hưu với mức tiết kiệm cao hơn 60% so với việc đầu tư vào tài khoản tiêt kiệm bình thường."
+                    : ""}
                 </p>
               </div>
             </div>
@@ -278,7 +397,11 @@ const Form = () => {
               href="https://www.bmo.com/main/personal/investments/schedule-a-call/?icid=tl-US32840INV1-HTBMO39"
               target="_blank"
             >
-              Talk to an advisor
+              {isEnglish
+                ? `Talk to an advisor`
+                : isVietnamese
+                ? "Trò chuyện với nhà tư vấn"
+                : ""}
             </a>
           </div>
         </div>
