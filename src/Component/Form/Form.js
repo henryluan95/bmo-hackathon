@@ -71,7 +71,7 @@ const Form = () => {
           <div className="card__setting">
             <button
               className="return"
-              onClick={() => window.location.replace("http://localhost:3001/")}
+              onClick={() => window.location.replace("http://localhost:3000/")}
             >
               {isEnglish ? "Go Back" : isVietnamese ? "Quay Lại" : ""}
             </button>
