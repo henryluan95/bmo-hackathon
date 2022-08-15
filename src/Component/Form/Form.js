@@ -409,7 +409,7 @@ const Form = () => {
     );
   }
 
-  return <section>Hello</section>;
+  return <section>Loading...</section>;
 };
 
 export default Form;
