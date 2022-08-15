@@ -1,7 +1,7 @@
 import "./Form.scss";
-import backgroundEl1 from "../../Assets/Rectangle1.svg";
-import backgroundEl2 from "../../Assets/Rectangle2.svg";
-import backgroundEl3 from "../../Assets/Rectangle3.svg";
+import backgroundEl1 from "../../assets/Rectangle1.svg";
+import backgroundEl2 from "../../assets/Rectangle2.svg";
+import backgroundEl3 from "../../assets/Rectangle3.svg";
 
 import React, { useState } from "react";
 

@@ -1,7 +1,7 @@
 import "./HomePage.scss";
 
 import React from "react";
-import Form from "../../Component/Form/Form";
+import Form from "../../components/Form/Form";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const Homepage = () => {
