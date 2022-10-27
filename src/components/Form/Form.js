@@ -1,5 +1,4 @@
 import "./Form.scss";
-import backgroundEl1 from "../../assets/Rectangle1.svg";
 import backgroundEl2 from "../../assets/Rectangle2.svg";
 import backgroundEl3 from "../../assets/Rectangle3.svg";
 
@@ -28,11 +27,6 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card">
-          <img
-            className="backgroundEl1"
-            src={backgroundEl1}
-            alt="background icon"
-          />
           <img
             className="backgroundEl3"
             src={backgroundEl3}
@@ -117,11 +111,6 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card">
-          <img
-            className="backgroundEl1"
-            src={backgroundEl1}
-            alt="background icon"
-          />
           <img
             className="backgroundEl3"
             src={backgroundEl3}
@@ -219,11 +208,6 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card">
-          <img
-            className="backgroundEl1"
-            src={backgroundEl1}
-            alt="background icon"
-          />
           <img
             className="backgroundEl3"
             src={backgroundEl3}
@@ -325,11 +309,6 @@ const Form = () => {
     return (
       <section className="overlay">
         <div className="card card--position">
-          <img
-            className="backgroundEl1"
-            src={backgroundEl1}
-            alt="background icon"
-          />
           <img
             className="backgroundEl3"
             src={backgroundEl3}
